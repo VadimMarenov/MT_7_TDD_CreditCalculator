@@ -10,7 +10,7 @@ public class TestCreditCalculator {
 
     @Test
     void getPaymentPerMonthTest() {
-        double expected = 8931.727571;
+        double expected = 8931.727571174955;
         double actual = sut.getPaymentPerMonth(creditValue, creditRate, creditTerm);
         Assertions.assertEquals(expected, actual);
     }
@@ -24,7 +24,7 @@ public class TestCreditCalculator {
 
     @Test
     void getLoanRepaymentTest() {
-        double expected = 7180.73085409947;
+        double expected = 7180.730854099471;
         double actual = sut.getLoanRepayment(creditValue, creditRate, creditTerm);
         Assertions.assertEquals(expected, actual);
     }
